@@ -1,0 +1,110 @@
+.App {
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  padding-top: 60px;
+  width: 100%;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.sidebar .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.sidebar .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.08);
+  background-color: #ffffff;
+}
+
+.sidebar .card-body {
+  padding: 0.8rem;
+}
+
+.sidebar .nav-link {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.sidebar .nav-link:hover {
+  color: #0d6efd;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.cards-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-card {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .content {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 15px;
+  }
+  
+  .main-card {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar .card {
+    margin-bottom: 0.5rem;
+  }
+}
