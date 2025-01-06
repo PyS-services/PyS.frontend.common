@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import ImportCard from './components/ImportCard';
+import ProveedoresCard from './components/ProveedoresCard';
 import './App.css';
 
 function App() {
@@ -36,9 +37,9 @@ function App() {
             </div>
             <div className="card rounded-3">
               <div className="card-body">
-                <a className="nav-link" href="#perfil">
-                  <i className="bi bi-person me-2"></i>
-                  Perfil
+                <a className="nav-link" href="#proveedores" onClick={() => setCurrentPage('proveedores')}>
+                  <i className="bi bi-building me-2"></i>
+                  Proveedores
                 </a>
               </div>
             </div>
@@ -58,6 +59,8 @@ function App() {
             <div className="main-card">
               {currentPage === 'importar' ? (
                 <ImportCard />
+              ) : currentPage === 'proveedores' ? (
+                <ProveedoresCard />
               ) : (
                 /* Aquí puedes poner el contenido por defecto o dejarlo vacío */
                 null
