@@ -1,0 +1,135 @@
+.proveedores-card {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.proveedores-card .table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.proveedores-card .modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.proveedores-card .modal-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #dee2e6;
+}
+
+.proveedores-card .form-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.proveedores-card .modal-body {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Estilos para los botones de acción */
+.proveedores-card .btn {
+  margin: 0 0.25rem;
+}
+
+/* Estilos para el formulario */
+.proveedores-card .form-control {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.proveedores-card .form-control:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Estilos para el espaciado de las filas */
+.proveedores-card .row {
+  margin-bottom: 1rem;
+}
+
+/* Estilos para el modal */
+.proveedores-card .modal-dialog {
+  max-width: 800px;
+  margin: 1.75rem auto;
+}
+
+/* Estilos para los botones en la tabla */
+.proveedores-card .table .btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Estilos para el scroll del modal */
+.proveedores-card .modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.proveedores-card .modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.proveedores-card .modal-body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.proveedores-card .modal-body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.pagination-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.page-size-select {
+  width: auto;
+  min-width: 200px;
+}
+
+.pagination {
+  margin-bottom: 0;
+}
+
+.pagination .page-link {
+  cursor: pointer;
+}
+
+.pagination-info span {
+  font-weight: 500;
+}
+
+.proveedores-card .invalid-feedback {
+  display: block;
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.proveedores-card .is-invalid {
+  border-color: #dc3545;
+}
+
+.proveedores-card .is-invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+} 
